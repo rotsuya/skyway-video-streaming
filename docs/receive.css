@@ -1,0 +1,23 @@
+body {
+    background-color: #000 !important;
+}
+
+#btnPlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.waitingRemoteStream #btnPlay, .monitoring #btnPlay {
+    display: none;
+}

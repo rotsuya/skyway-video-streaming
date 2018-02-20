@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja" class="waitingRemoteStream">
+<head>
+    <meta charset="UTF-8">
+    <title>receive skyway-video-streaming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="receive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+</head>
+<body>
+<div id="btnPlay" class="disabled">Click to Play</div>
+<div class="container text-center" id="forms">
+    <a id="btnStop" href="./" class="btn btn-light mb-5" class="disabled">
+        <span class="oi oi-circle-x" title="close" aria-hidden="true"></span>
+        Close
+    </a>
+</div>
+<video id="video" muted playsinline autoplay></video>
+<script src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+<script src="common.js"></script>
+<script src="receive.js"></script>
+</body>
+</html>
